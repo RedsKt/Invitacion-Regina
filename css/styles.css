@@ -1,0 +1,632 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+
+/* Estilos generales para el centrado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive !important;
+    background-image: url('../imagenes/bg-image-RJGC.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: repeat;
+    position: relative; /* Permite que los elementos hijos se posicionen con respecto al body */
+    z-index: -1; /* Asegúrate de que el fondo esté detrás de otros elementos */
+    color: #4d6450;
+}
+
+
+.material-symbols-outlined {
+    font-size: 5rem !important; /* Cambia este valor según el tamaño deseado */
+
+}
+
+
+.dancing-script-regular {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900; /* 400 es para 'regular' */
+    font-style: normal;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imagenes/Cover-home.png'); /* Ruta a tu imagen */
+    background-size: 100% 100%; /* Asegura que la imagen cubra toda la pantalla sin distorsionarse */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing:auto;
+    font-weight: 900; /* Puedes cambiar esto según lo que necesites */
+    font-style: normal;
+    color: #caab53;
+}
+
+#title {
+    letter-spacing: 0.2em;
+    font-size: 3.5rem !important;
+    margin-bottom: 10px;
+}
+
+
+header {
+    width: 100%;
+    background-color: #bcd0c0;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Para hacer una transición suave cuando se fija el header */
+    position: relative; /* Normal por defecto */
+    z-index: 1000;
+}
+
+    header.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más fuerte cuando se fija */
+    }
+
+
+.menu-icon {
+    font-size: 30px; /* Tamaño del icono */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    padding: 10px;
+    display: flex; /* Muestra el icono */
+    justify-content: right;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Oculto por defecto */
+    flex-direction: column; /* Hace que los elementos sean verticales cuando se desplieguen */
+    justify-content: center;
+    align-items: center;
+    background-color: #bcd0c0;
+    width: 100%; /* Para que ocupe todo el ancho del contenedor */
+    position: absolute;
+    top: 50px; /* Coloca el menú justo debajo del header */
+    left: 0;
+}
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado entre los elementos */
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                color: #555;
+            }
+
+/* Cuando el menú está visible */
+.show-menu {
+    display: flex; /* Muestra el menú y coloca los elementos en columna */
+}
+
+
+
+#leyend {
+    background-color: #bcd0c0; /* Color de fondo */
+    width: 50%; /* Ancho por defecto */
+    height: auto; /* Ajuste automático de la altura al contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border-radius: 8px;
+    text-align: center;
+}
+
+    /* Estilo para el contenido dentro de leyend */
+    #leyend .tContent {
+        text-align: center; /* Centra el texto */
+        font-size: 1.5rem; /* Tamaño de letra */
+        line-height: 1.5; /* Espaciado entre líneas */
+        max-width: 800px; /* Ancho máximo del texto */
+    }
+
+
+
+.container {
+    text-align: center;
+}
+
+
+#subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+#clockContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+    #countdown > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #countdown > div > div {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #countdown > div > span {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+.map-icon{
+       font-size:8.5rem !important;
+    }
+
+
+.map-i {
+font-size:2rem !important;
+}
+
+#maps {
+    margin: 40px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto del título */
+}
+
+
+.maps-table {
+    display: flex; /* Disposición en fila */
+    justify-content: space-around; /* Espacio entre las columnas */
+    align-items: center; /* Centra verticalmente las columnas */
+    margin: 20px 0;
+}
+
+.maps-column {
+    flex: 1; /* Las columnas se distribuyen equitativamente */
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px; /* Espacio entre las columnas */
+}
+
+.map-icon {
+    width: 100%; /* Hace que el ícono ocupe todo el ancho de la columna */
+    height: auto; /* Mantiene la proporción del ícono */
+    margin-bottom: 10px; /* Espacio debajo del ícono */
+}
+
+.button-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.map-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #bcd0c0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100px;
+}
+
+    .map-button span {
+        margin-right: 5px;
+    }
+
+    .map-button:hover {
+        background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+    }
+
+.map-title{
+    font-size:2.5rem;
+    font-weight:600 !important;
+}
+
+.map-ubi {
+    font-size:2rem;
+}
+
+.map-extra{
+    font-size:1.5rem;
+}
+
+
+
+
+
+#itinerario {
+    margin: 20px auto; /* Margen para separar del resto */
+    padding: 40px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    align-content: center;
+}
+
+.itinerary-table {
+    display: flex;
+    flex-direction: column; /* Apilar filas verticalmente */
+    align-items: center;
+}
+
+.itinerary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.itinerary-cell {
+    flex: 1; /* Ocupa el mismo espacio en la fila */
+    display: flex; /* Usar flex para el contenido */
+    flex-direction: column; /* Organizar el texto en columna */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: right; /* Alinear texto a la derecha */
+}
+.itinerary-cell-right {
+    flex: 1; /* Ocupa el mismo espacio en la fila */
+    display: flex; /* Usar flex para el contenido */
+    flex-direction: column; /* Organizar el texto en columna */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: left; /* Alinear texto a la derecha */
+}
+
+.divider {
+    border-left: 2px solid black; /* Línea divisoria */
+    height: 50px; /* Altura de la línea divisoria */
+}
+
+/* Ajuste para que el texto se pegue al divider derecho */
+.itinerary-cell span {
+    margin: 0; /* Sin margen */
+}
+
+.itinerary-cell:first-child {
+    padding-left: 5px; /* Espacio entre el texto y el divisor */
+}
+
+.itinerary-cell:last-child {
+    padding-left: 5px; /* Espacio entre el divisor y la imagen */
+    justify-content: flex-end; /* Alinear contenido hacia la derecha */
+}
+
+.icon {
+    width: 50px; /* Ajusta el tamaño de los iconos */
+    height: 50px; /* Ajusta el tamaño de los iconos */
+}
+
+.itineraryTitle {
+    text-align: center; /* Centra el texto del h2 */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 4rem; /* Tamaño del texto (ajusta según tus preferencias) */
+}
+
+
+#album-container {
+    width: 100%;
+    overflow: hidden; /* Oculta las fotos fuera de la vista */
+    margin: 0 auto; /* Centra el álbum en la página */
+}
+
+#album {
+    display: flex;
+    width: calc(10% * 12); /* Duplicamos las fotos, por eso es 10% * 12 */
+    animation: scrollAlbum 30s infinite linear; /* Animación continua */
+}
+
+.photo {
+    flex: 0 0 10%; /* Cada foto ocupará el 10% del ancho del contenedor */
+    max-width: 10%; /* Máximo ancho del 10% */
+    box-sizing: border-box;
+    padding: 0 5px; /* Espacio pequeño entre fotos */
+}
+
+    .photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px; /* Borde redondeado */
+    }
+
+/* Animación de desplazamiento */
+@keyframes scrollAlbum {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%); /* Solo desplazamos hasta la mitad */
+    }
+}
+
+
+
+
+
+
+
+
+#mesa-de-regalos {
+    margin: 40px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto del título */
+}
+
+.mesa-title {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.mesa-container {
+    display: flex; /* Disposición en fila */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+.mesa-item {
+    display: flex; /* Permite la disposición de imagen y enlace en columna */
+    flex-direction: column; /* Coloca imagen y enlace uno encima del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.mesa-image {
+    max-width: 100px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    border-radius:3px;
+}
+
+.mesa-link {
+    padding: 10px 15px; /* Espaciado interno del enlace */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+    .mesa-link:hover {
+        background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+    }
+
+
+
+#cierre-ubicacion {
+    margin: 40px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto */
+    background-color: #9b752f; /* Color de fondo beige */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    color:#bcd0c0;
+}
+
+    #cierre-ubicacion h2 {
+        font-size: 24px; /* Tamaño del título */
+        margin-bottom: 10px; /* Espacio debajo del título */
+    }
+
+    #cierre-ubicacion p {
+        margin: 5px 0; /* Espaciado entre párrafos */
+    }
+
+
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #subtitle {
+        font-size: 1.2rem;
+    }
+
+    #countdown > div > div {
+        font-size: 2.5rem;
+    }
+
+    #countdown > div > span {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 480px) {
+    #title {
+        font-size: 1.2rem;
+    }
+
+    #subtitle {
+        font-size: 1rem;
+    }
+
+    #countdown {
+        flex-direction: column; /* Reloj en formato vertical */
+        gap: 10px;
+    }
+
+        #countdown > div > div {
+            font-size: 2rem;
+        }
+
+        #countdown > div > span {
+            font-size: 0.8rem;
+        }
+}
+
+
+
+
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar el icono de hamburguesa */
+    }
+
+    #menu {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        border-top: 2px solid #ccc;
+    }
+
+        #menu.show-menu {
+            display: flex; /* Mostrar el menú cuando se active el toggle */
+        }
+
+        #menu li {
+            margin: 10px 0; /* Separación entre los elementos del menú en modo móvil */
+            text-align: center;
+        }
+
+    header {
+        position: relative;
+    }
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #leyend {
+        width: 90%; /* Ajuste del ancho a un 90% en pantallas pequeñas */
+        height: auto; /* Ajuste automático de la altura al contenido */
+        padding: 15px; /* Espaciado interno reducido */
+        margin: 15px auto; /* Reduce el margen superior e inferior */
+    }
+
+    #leyend .tContent {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    /* Las columnas se apilan una sobre la otra */
+    .maps-table {
+        flex-direction: column;
+    }
+
+    .maps-column {
+        margin: 10px 0; /* Espacio entre las columnas al apilarse */
+        width: 100%; /* Que las columnas ocupen el ancho completo */
+    }
+
+    .button-container {
+        flex-direction: column; /* Apilar botones verticalmente */
+    }
+
+    .map-button {
+        margin-bottom: 10px; /* Espaciado entre los botones en columnas */
+        width: 80%; /* Ancho de botones más ajustado en pantallas pequeñas */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    /* Las filas se apilan verticalmente */
+    .itinerary-row {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .itinerary-cell, .itinerary-cell-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .itinerary-cell-right {
+        margin-top: 10px; /* Añadir espacio entre el texto y el ícono */
+    }
+
+    .itineraryTitle {
+        font-size: 1.5em; /* Ajustar el tamaño del título para pantallas pequeñas */
+    }
+
+    .itinerary-cell {
+        font-size: 1em; /* Ajustar el tamaño del texto en pantallas pequeñas */
+    }
+
+    .itinerary-cell-right .material-symbols-outlined {
+        font-size: 1.8em; /* Ajustar el tamaño del ícono en pantallas pequeñas */
+    }
+}
+
+
+@media (max-width: 768px) {
+    #album {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .photo {
+        min-width: 150px; /* Fotos más pequeñas para pantallas móviles */
+        margin-right: 5px;
+    }
+
+    #album-container {
+        padding: 10px;
+    }
+
+    #album {
+        display: flex;
+        width: calc(10% * 12); /* Duplicamos las fotos, por eso es 10% * 12 */
+        animation: scrollAlbum 20s infinite linear; /* Animación continua */
+    }
+
+    @keyframes scrollAlbum {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-180%); /* Solo desplazamos hasta la mitad */
+        }
+    }
+}

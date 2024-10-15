@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="content">
+                <h1 id="title"> Regina Jazbel Garcia Caballero </h1>
+                <br>
+                <h4 id="subtitle"> 30 de Noviembre de 2024</h4>
+
+
+                <div id="clockContainer">
+                    <div id="clockContainer2">
+                        <div id="countdown">
+                            <div id="days">
+                                <div id="dCount"> </div>
+                                <span> Dias</span>
+                            </div>
+                            <div id="hours">
+                                <div id="hCount"> </div>
+                                <span> Horas</span>
+                            </div>
+                            <div id=" minutes">
+                                <div id="mCount"> </div>
+                                <span> Minutos</span>
+                            </div>
+                            <div id="seconds">
+                                <div id="sCount"> </div>
+                                <span> Segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <header>
+        <nav>
+            <!-- Icono de menú hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; <!-- Símbolo de hamburguesa -->
+            </div>
+            <ul id="menu">
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#mesa-de-regalos">Mesa de Regalos</a></li>
+                <li><a href="#album">Álbum de Fotos</a></li>
+                <li><a href="#maps">Mapas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <section id="leyend">
+        <p class="tContent">
+            Con gran alegría, queremos invitarte a celebrar un momento muy especial <br> en nuestras vidas.<br>
+
+            Regina,
+            recibirá por primera vez el Sacramento de la Eucaristía.<br>
+
+            Nos encantaría que nos acompañaras en este día tan significativo para Regis <br> y nuestra familia.<br>
+
+            Después de la ceremonia, te invitamos al festejo.<br>
+            <br>
+            Con cariño, familia Quezada Caballero<br>
+        </p>
+    </section>
+
+
+
+    <section id="maps">
+        <div class="maps-table">
+            <div class="maps-column">
+                <span class="material-symbols-outlined map-icon">church</span>
+                <div class="map-title">Ceremonia </div><br>
+                <div class="map-ubi"> Parroquia de nuestra señora del Carmen</div><br><br>
+                <div class="map-extra"> Acomañanos en su primera eucaristia</div><br><br>
+                <div class="button-container">
+                    <a href="https://www.google.com/maps" class="map-button"><span class="material-symbols-outlined map-i">pin_drop</span> </a>
+                    <a href="https://waze.com" class="map-button"><span class="material-symbols-outlined map-i">cloud</span> </a>
+                </div>
+            </div>
+            <div class="maps-column">
+                <span class="material-symbols-outlined map-icon">celebration</span>
+                <div class="map-title">Fiesta </div><br>
+                <div class="map-ubi"> Salon de fiestas "Xia"</div><br><br>
+                <div class="map-extra"> Celebra con nosotros esta ocasión especial</div><br><br><br>
+                <div class="button-container">
+                    <a href="https://www.google.com/maps" class="map-button"><span class="material-symbols-outlined map-i">pin_drop</span> </a>
+                    <a href="https://waze.com" class="map-button"><span class="material-symbols-outlined map-i">cloud</span> </a>
+                </div>
+            </div>
+            <div class="maps-column">
+                <span class="material-symbols-outlined map-icon">checkroom</span>
+                <div class="map-title">Codigo de vestimenta </div> <br> <br>
+                <div class="map-ubi"> Formal casual</div>
+                <div class="map-extra"> </div><br><br><br>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="itinerario">
+        <h2 class="itineraryTitle">Itinerario</h2>
+        <div class="itinerary-table">
+            <div class="itinerary-row">
+                <div class="itinerary-cell">
+                    <span>Misa</span>
+                    <span>2:00 pm <br> Parroquia de nuestra señora del Carmen </span>
+                </div>
+
+                <div class="itinerary-cell-right">
+                    <span class="material-symbols-outlined">church</span>
+                </div>
+            </div>
+
+            <div class="itinerary-row">
+                <div class="itinerary-cell">
+                    <span class="material-symbols-outlined">celebration</span>
+
+                </div>
+
+                <div class="itinerary-cell-right">
+                    <span>Fiesta</span>
+                    <span>3:00 om <br> Salon de fiestas "Xia"</span>
+                </div>
+            </div>
+
+            <div class="itinerary-row">
+                <div class="itinerary-cell">
+                    <span>Comida</span>
+                    <span>4:00 pm <br> Acompañanos en este banquete</span>
+                </div>
+
+                <div class="itinerary-cell-right">
+                    <span class="material-symbols-outlined">local_dining</span>
+                </div>
+            </div>
+
+            <div class="itinerary-row">
+                <div class="itinerary-cell">
+                    <span class="material-symbols-outlined">partly_cloudy_night</span>
+                </div>
+
+                <div class="itinerary-cell-right">
+                    <span>Final</span>
+                    <span>[hora]</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div id="album-container">
+        <div id="album">
+            <div class="photo">
+                <img src="imagenes/r1.jpg" alt="Foto 1">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r2.jpg" alt="Foto 2">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r3.jpg" alt="Foto 3">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r4.jpg" alt="Foto 4">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r5.jpg" alt="Foto 5">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r6.jpg" alt="Foto 6">
+            </div>
+            <!-- Duplicar las fotos para un scroll infinito -->
+            <div class="photo">
+                <img src="imagenes/r1.jpg" alt="Foto 1">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r2.jpg" alt="Foto 2">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r3.jpg" alt="Foto 3">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r4.jpg" alt="Foto 4">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r5.jpg" alt="Foto 5">
+            </div>
+            <div class="photo">
+                <img src="imagenes/r6.jpg" alt="Foto 6">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section id="mesa-de-regalos">
+        <h2 class="mesa-title">Mesa de Regalos</h2>
+        <div class="mesa-container">
+            <div class="mesa-item">
+                <a href="enlace_a_tienda_1" class="mesa-link"><img src="imagenes/logo-sears.png" alt="Tienda 1" class="mesa-image"></a>
+            </div>
+            <div class="mesa-item">
+                <a href="enlace_a_tienda_1" class="mesa-link"><img src="imagenes/logo-sears.png" alt="Tienda 1" class="mesa-image"></a>
+            </div>
+            <div class="mesa-item">
+                <a href="enlace_a_tienda_1" class="mesa-link"><img src="imagenes/logo-sears.png" alt="Tienda 1" class="mesa-image"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cierre-ubicacion">
+        <h2>¡Te Esperamos!</h2>
+        <p>Estamos emocionados de celebrar este día tan especial contigo. ¡No olvides confirmar tu asistencia!</p>
+    </section>
+
+
+
+
+    <script src="js/scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("show-menu");
+        }
+    </script>
+    <script>
+        window.onscroll = function () { stickyHeader() };
+
+        var header = document.querySelector("header");
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("fixed");
+            } else {
+                header.classList.remove("fixed");
+            }
+        }
+    </script>
+
+</body>
+</html>
